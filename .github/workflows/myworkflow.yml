@@ -33,12 +33,12 @@ jobs:
            pytest tests.py
 
       - name: Upload pytest test results
-          uses: actions/upload-artifact@v3
-          with:
-            name: pytest-results-${{ matrix.python-version }}
-            path: junit/test-results-${{ matrix.python-version }}.xml
+        uses: actions/upload-artifact@v3
+        with:
+          name: pytest-results-${{ matrix.python-version }}
+          path: junit/test-results-${{ matrix.python-version }}.xml
 
-          if: ${{ always() }}
+        if: ${{ always() }}
 #      - name: Upload pytest test results
 #        uses: actions/upload-artifact@v3
 #        with:
