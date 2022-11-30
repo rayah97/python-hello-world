@@ -1,10 +1,12 @@
 import pytest
-
-def func(x):
-    return x + 2
-
-
-def test_answer():
-    assert func(3) == 5
+def test_file1_method1():
+	x=5
+	y=6
+	assert x+1 == y,"test failed"
+	assert x == y,"test failed"
+def test_file1_method2():
+	x=5
+	y=6
+	assert x+1 == y,"test failed"
 
 
